@@ -4256,6 +4256,10 @@ sql_id:
   {
     $$ = NewColIdent(string($1))
   }
+| ID '(' ID ',' INTEGRAL ')'
+  {
+    $$ = NewColIdent(string($1))
+  }
 
 reserved_sql_id:
   sql_id
