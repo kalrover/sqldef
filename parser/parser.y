@@ -4252,11 +4252,11 @@ ignore_opt:
   { $$ = IgnoreStr }
 
 sql_id:
-  ID
+  ID '(' STRING ',' INTEGRAL ')'
   {
     $$ = NewColIdent(string($1))
   }
-| ID '(' ID ',' INTEGRAL ')'
+| ID
   {
     $$ = NewColIdent(string($1))
   }
