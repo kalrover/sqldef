@@ -212,6 +212,7 @@ var keywords = map[string]int{
 	"full":                   FULL,
 	"fulltext":               FULLTEXT,
 	"generated":              GENERATED,
+	"geography":              GEOGRAPHY,
 	"geometry":               GEOMETRY,
 	"geometrycollection":     GEOMETRYCOLLECTION,
 	"get":                    UNUSED,
